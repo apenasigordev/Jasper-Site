@@ -1,0 +1,5 @@
+div(id="radioscroll")
+ each r in radio
+  img(src=r.img class="radioimg")
+  p #{r.name}
+  button(class="button" onclick="location.href='/listen/" +r.route+ "';") Join
